@@ -2,7 +2,7 @@
 
 Mi proyecto va a ser una pagina del mundo de las motos donde podras ver desde las motos más antiguas hasta las mas nuevas.
 
-Lo primero de todo, nada mas entrar a la pagina veras el titulo de la pagina y tendras un indice donde podras elegir el tipo de moto que quieras.
+Lo primero de todo, nada mas entrar a la pagina veras el titulo de la pagina(MundoDelMotor) y tendras un indice donde podras elegir el tipo de moto que quieras.
 
 Cada moto tendrá un boton de ❤ donde podras guardatela.
 
