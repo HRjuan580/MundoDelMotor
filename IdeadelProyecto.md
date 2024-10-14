@@ -4,7 +4,7 @@ Mi proyecto va a ser una pagina del mundo de las motos donde podras ver desde la
 
 Lo primero de todo, nada mas entrar a la pagina veras el titulo de la pagina(MundoDelMotor) y tendras un indice donde podras elegir el tipo de moto que quieras.
 
-Cada moto tendrá un boton de ❤ donde podras guardatela.
+Cada moto tendrá un boton de "me gusta" donde podras guardatela.
 
 Cada moto tendrá una imagen respectiva. Al pinchar en el nombre de la moto encontras información de esta, con todas las caracteristicas de dicha moto.
 
