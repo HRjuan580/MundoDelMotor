@@ -1,21 +1,30 @@
-# MundoDelMotor
-Mi proyecto va a ser una pagina del mundo de las motos donde podras ver desde las motos más antiguas hasta las mas nuevas.
+# Mundo Del Motor
+El proyecto va a tratar una página “Mundo De Las Motos” donde podrás ver desde las motos más antiguas hasta las más nuevas.
 
-Lo primero de todo, nada mas entrar a la pagina veras el titulo de la pagina(MundoDelMotor) y tendras un indice donde podras elegir el tipo de moto que quieras.
+Lo primero de todo, nada mas entrar a la pagina hay el titulo de la pagina(Mundo Del Motor) y tendrás un índice donde podrás elegir el tipo de moto que gustes.
 
-Cada moto tendrá un boton de "me gusta" donde podras guardatela.
+Cada motor tendrá un botón de "me gusta" donde podrás guárdatela.
 
-Cada moto tendrá una imagen respectiva. Al pinchar en el nombre de la moto encontras información de esta, con todas las caracteristicas de dicha moto.
+Cada moto tendrá una imagen respectiva. Al pinchar en el nombre de la moto encuentras información de esta, con todas las características de dicha moto.
 
-Y cada moto tendrá un boton para poder comprarla.
+Cada moto tendrá un botón para poder comprarla.
 
-Al principio de la pagina tendra a su disposición un boton que te permitira alquilar la moto para (viajes,rutas) y podras tambien alquilar esa dicha moto por los dias que quieras.
+Al principio de la página tendrá a su disposición un botón que te permitirá alquilar la moto para (viajes,rutas) y podrás también alquilar esa dicha moto por los días que desees.
 
-En el boton de alquilar la moto se le enviara un informe al responsable y nosotros te haremos los calculos de los precios depende de los días.
+En el botón de alquilar la moto se le enviará un informe al responsable y este te calculará el precio dependiendo de los días que quieras alquilar.
 
-En la ultima pagina tendras todo tipo de informacion sobre nosotros(redes,correo,telefono,etc) y un apartado donde hay que poner el correo electrónico y un marco donde pondras las dudas y consultas que te surgan sonbre ese el tema de las motos.
+En la última página tendrás todo tipo de información sobre la empresa (redes,correo,teléfono,etc) y un apartado donde hay que poner el correo electrónico y un marco donde pondrás las dudas y consultas que te surjan sobre ese el tema de las motos.
 
-Tambien tendras un apartado donde podras iniciar sesión
+También tendrás un apartado donde podrás iniciar sesión
+
+Wireframe
+
+En los Wireframe hay 10 páginas donde hay diferentes páginas:
+1º La primera página contiene el logo de la empresa u página, un índice donde estarán las diferentes páginas de las motos que habrá, un botón de carrito y una barra desplegable donde estarán los enlaces para iniciar sesión, consultas y ayudas.
+2º Las ss páginas estarán distribuidas por antigüedad.
+
+La página estará diseñada en HTML y CSS
+
 
 
 
