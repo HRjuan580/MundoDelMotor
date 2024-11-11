@@ -13,4 +13,9 @@ Al principio de la pagina tendra a su disposición un boton que te permitira alq
 
 En el boton de alquilar la moto se le enviara un informe al responsable y nosotros te haremos los calculos de los precios depende de los días.
 
-Al final la pagina inicial tendras todo tipo de informacion sobre nosotros(redes,correo,telefono,etc)
+En la ultima pagina tendras todo tipo de informacion sobre nosotros(redes,correo,telefono,etc) y un apartado donde hay que poner el correo electrónico y un marco donde pondras las dudas y consultas que te surgan sonbre ese el tema de las motos.
+
+Tambien tendras un apartado donde podras iniciar sesión
+
+
+
