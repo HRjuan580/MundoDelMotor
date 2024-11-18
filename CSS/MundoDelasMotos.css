@@ -1,0 +1,179 @@
+/* CSS/MundoDelasMotos.css */
+
+/* Reset de márgenes y paddings para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabecera */
+.header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #f4a261;
+}
+
+/* Sección de productos */
+.section {
+    margin-top: 120px; /* Para que no se solape con la cabecera fija */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e76f51;
+}
+
+.like-button {
+    background-color: #e76f51;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.like-button:hover {
+    background-color: #f4a261;
+}
+
+.product button, .product .like-button {
+    display: inline-block;
+}
+
+/* Estilo para la barra de navegación desplegable */
+.nav li ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #000;
+    padding: 10px 0;
+    top: 50px;
+    left: 0;
+    width: 200px;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav li ul li a:hover {
+    background-color: #e76f51;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
