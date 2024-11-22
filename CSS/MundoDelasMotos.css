@@ -100,4 +100,56 @@ body {
     background-color: #e76f51;
 }
 
+/* Sección de productos */
+.section {
+    margin-top: 120px; /* Para que no se solape con la cabecera fija */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-img {
+    max-width: 100%;         /* Imagen no debe exceder el contenedor */
+    max-height: 200px;       /* Limita la altura máxima de la imagen */
+    height: auto;            /* Mantiene la proporción de la imagen */
+    display: block;          /* Elimina el espacio extra debajo de la imagen */
+    margin-left: auto;       /* Centra la imagen */
+    margin-right: auto;      /* Centra la imagen */
+    object-fit: contain;     /* Asegura que la imagen se ajuste sin distorsión */
+}
+
+.product h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
