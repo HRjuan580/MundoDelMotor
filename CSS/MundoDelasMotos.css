@@ -153,3 +153,55 @@ button {
     margin: 5px;
     transition: background-color 0.3s;
 }
+
+button:hover {
+    background-color: #e76f51;
+}
+
+.like-button {
+    background-color: #e76f51;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.like-button:hover {
+    background-color: #f4a261;
+}
+
+.product button, .product .like-button {
+    display: inline-block;
+}
+
+/* Flexibilidad de la estructura sin @media */
+
+/* Sección de productos */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product {
+    flex: 1 1 calc(33% - 20px); /* 3 productos por fila en pantallas grandes */
+    min-width: 300px; /* Asegura que los productos no sean más pequeños de 300px */
+    box-sizing: border-box;
+}
+
+/* Estilo para los botones */
+button, .like-button {
+    width: 100%;
+}
+
+/* Eliminar márgenes y ajustar tamaños de texto en pantallas pequeñas */
+.product h3 {
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 12px;
+}
+
+.product button, .product .like-button {
+    font-size: 14px;
+}
