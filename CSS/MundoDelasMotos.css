@@ -1,5 +1,4 @@
 /* CSS/MundoDelasMotos.css */
-
 body{
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -7,7 +6,7 @@ body{
 }
 
 /* Cabecera */
-.header{
+.header {
     background-color: #000;
     padding: 20px;
     text-align: center;
@@ -19,19 +18,20 @@ body{
     z-index: 1000;
 }
 
-.header__logo{
+.header__logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Cambiado para que logo y título estén en columna en pantallas pequeñas */
 }
 
-.header__logo img{
+.header__logo img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
 }
 
-.header h1{
+.header h1 {
     font-size: 24px;
 }
 
@@ -43,56 +43,54 @@ body{
     padding: 10px 0;
 }
 
-.nav li{
+.nav li {
     margin: 0 15px;
-    position: relative; /* Necesario para que el submenú se posicione relativo a su contenedor */
+    position: relative;
 }
 
-.nav a{
+.nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: #f4a261;
 }
 
 /* Estilos de la navegación desplegable */
-.nav li ul{
-    display: none; /* El submenú está oculto por defecto */
+.nav li ul {
+    display: none;
     position: absolute;
     list-style: none;
     background-color: #000;
     padding: 10px 0;
-    top: 100%; /* Aparece justo debajo del menú principal */
+    top: 100%;
     left: 0;
     width: 200px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    z-index: 999; /* Asegura que el submenú esté encima de otros elementos */
+    z-index: 999;
 }
 
-/* Mostrar el submenú cuando el ratón está sobre el li */
 .nav li:hover > ul {
-    display: block; /* Muestra el submenú */
-    opacity: 1; /* Hace que el submenú sea completamente visible */
+    display: block;
+    opacity: 1;
 }
 
-/* Asegurarse de que el submenú esté visible también cuando el ratón está sobre él */
-.nav li ul li a{
+.nav li ul li a {
     color: white;
     padding: 10px;
     text-decoration: none;
     display: block;
 }
 
-.nav li ul li a:hover{
+.nav li ul li a:hover {
     background-color: #e76f51;
 }
 
 /* Sección de productos */
-.section{
+.section {
     margin-top: 120px; /* Para que no se solape con la cabecera fija */
     padding: 20px;
     display: flex;
@@ -100,7 +98,7 @@ body{
     justify-content: space-around;
 }
 
-.product{
+.product {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -112,7 +110,7 @@ body{
     transition: all 0.3s ease;
 }
 
-.product-img{
+.product-img {
     max-width: 100%;
     max-height: 200px;
     height: auto;
@@ -122,18 +120,18 @@ body{
     object-fit: contain;
 }
 
-.product h3{
+.product h3 {
     font-size: 20px;
     margin: 15px 0;
 }
 
-.product p{
+.product p {
     font-size: 14px;
     color: #555;
     margin-bottom: 20px;
 }
 
-button{
+button {
     background-color: #f4a261;
     color: white;
     border: none;
@@ -145,55 +143,158 @@ button{
     transition: background-color 0.3s;
 }
 
-button:hover{
+button:hover {
     background-color: #e76f51;
 }
 
-.like-button{
+.like-button {
     background-color: #e76f51;
     font-size: 16px;
     padding: 10px 20px;
 }
 
-.like-button:hover{
+.like-button:hover {
     background-color: #f4a261;
 }
 
-.product button, .product .like-button{
+.product button,
+.product .like-button {
     display: inline-block;
 }
 
-
-
 /* Sección de productos */
-.section{
+.section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
 }
 
-.product{
-    flex: 1 1 calc(33% - 20px); /
-min-width: 300px;
+.product {
+    flex: 1 1 calc(33% - 20px);
+    min-width: 300px;
     box-sizing: border-box;
 }
 
-/* Estilo para los botones */
-button, .like-button{
+button,
+.like-button {
     width: 100%;
 }
 
 /* Eliminar márgenes y ajustar tamaños de texto en pantallas pequeñas */
-.product h3{
+.product h3 {
     font-size: 18px;
 }
 
-.product p{
+.product p {
     font-size: 12px;
 }
 
-.product button, .product .like-button{
+.product button,
+.product .like-button {
     font-size: 14px;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Cabecera */
+    .header h1 {
+        font-size: 20px; /* Reducir tamaño del título */
+    }
+
+    .header__logo {
+        flex-direction: column; /* Logo y título en columna */
+    }
+
+    .header__logo img {
+        width: 40px; /* Reducir tamaño de la imagen del logo */
+        height: 40px;
+        margin-bottom: 10px; /* Espacio entre logo y título */
+    }
+
+    /* Menú de navegación */
+    .nav {
+        flex-direction: column; /* Menú en columna en pantallas pequeñas */
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+
+    /* Sección de productos */
+    .section {
+        justify-content: center; /* Centrar los productos en pantallas pequeñas */
+    }
+
+    .product {
+        width: 100%; /* Los productos ocupan todo el ancho */
+        margin: 10px 0;
+    }
+
+    .product h3 {
+        font-size: 16px; /* Reducir el tamaño de los títulos de los productos */
+    }
+
+    .product p {
+        font-size: 12px; /* Reducir el tamaño de las descripciones */
+    }
+
+    .product-img {
+        max-height: 150px; /* Reducir el tamaño máximo de las imágenes */
+    }
+
+    button,
+    .like-button {
+        font-size: 12px; /* Reducir el tamaño de los botones */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Cabecera */
+    .header h1 {
+        font-size: 18px; /* Hacer el título aún más pequeño */
+    }
+
+    .header__logo img {
+        width: 35px; /* Reducir aún más el logo */
+        height: 35px;
+    }
+
+    /* Menú de navegación */
+    .nav {
+        padding: 10px 0;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+
+    .nav a {
+        font-size: 14px; /* Reducir el tamaño de la fuente del menú */
+    }
+
+    /* Sección de productos */
+    .product {
+        width: 100%; /* Los productos ocupan todo el ancho */
+        margin: 5px 0;
+    }
+
+    .product h3 {
+        font-size: 14px; /* Reducir el tamaño de los títulos de los productos */
+    }
+
+    .product p {
+        font-size: 10px; /* Reducir el tamaño de las descripciones */
+    }
+
+    .product-img {
+        max-height: 120px; /* Reducir aún más el tamaño máximo de las imágenes */
+    }
+
+    button,
+    .like-button {
+        font-size: 12px; /* Reducir el tamaño de los botones */
+    }
+}
+
 
