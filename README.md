@@ -24,8 +24,6 @@ En los Wireframe hay 10 páginas donde hay diferentes páginas:
 2º Las ss páginas estarán distribuidas por antigüedad.
 
 La página estará diseñada en HTML y CSS
-
-
-
-
-
+Errores que tenia y han sido arreglados
+Menu, la parte despegable salia en otra parte y ha sido corregido
+Las paginas cuando las puse en el menu despegable me dio error de localhost y ya esta bien
