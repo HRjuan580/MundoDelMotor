@@ -1,5 +1,6 @@
 /* CSS/MundoDelasMotos.css */
-body{
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
@@ -9,20 +10,24 @@ body{
 .header {
     background-color: #000;
     padding: 20px;
-    text-align: center;
     color: white;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Alinea el logo y el menú a los lados */
+    align-items: center;
+    padding-left: 20px;  /* Para dar espacio al logo */
+    padding-right: 20px; /* Para que el menú también tenga margen */
 }
 
+/* Logo y título a la izquierda */
 .header__logo {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column; /* Cambiado para que logo y título estén en columna en pantallas pequeñas */
+    justify-content: flex-start; /* Alinea todo a la izquierda */
 }
 
 .header__logo img {
@@ -33,14 +38,17 @@ body{
 
 .header h1 {
     font-size: 24px;
+    margin: 0;
 }
 
-/* Menú de navegación */
+/* Menú de navegación centrado */
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra el menú */
     list-style: none;
     padding: 10px 0;
+    flex-grow: 1; /* Permite que el menú ocupe el espacio disponible */
+    margin: 0;
 }
 
 .nav li {
@@ -162,7 +170,7 @@ button:hover {
     display: inline-block;
 }
 
-/* Sección de productos */
+/* Sección de productos responsiva */
 .section {
     display: flex;
     flex-wrap: wrap;
@@ -181,40 +189,26 @@ button,
     width: 100%;
 }
 
-/* Eliminar márgenes y ajustar tamaños de texto en pantallas pequeñas */
-.product h3 {
-    font-size: 18px;
-}
-
-.product p {
-    font-size: 12px;
-}
-
-.product button,
-.product .like-button {
-    font-size: 14px;
-}
-
-/* Estilos responsivos */
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     /* Cabecera */
     .header h1 {
-        font-size: 20px; /* Reducir tamaño del título */
+        font-size: 20px;
     }
 
     .header__logo {
-        flex-direction: column; /* Logo y título en columna */
+        flex-direction: column;
     }
 
     .header__logo img {
-        width: 40px; /* Reducir tamaño de la imagen del logo */
+        width: 40px;
         height: 40px;
-        margin-bottom: 10px; /* Espacio entre logo y título */
+        margin-bottom: 10px;
     }
 
     /* Menú de navegación */
     .nav {
-        flex-direction: column; /* Menú en columna en pantallas pequeñas */
+        flex-direction: column;
     }
 
     .nav li {
@@ -223,40 +217,41 @@ button,
 
     /* Sección de productos */
     .section {
-        justify-content: center; /* Centrar los productos en pantallas pequeñas */
+        justify-content: center;
     }
 
     .product {
-        width: 100%; /* Los productos ocupan todo el ancho */
+        width: 100%;
         margin: 10px 0;
     }
 
     .product h3 {
-        font-size: 16px; /* Reducir el tamaño de los títulos de los productos */
+        font-size: 16px;
     }
 
     .product p {
-        font-size: 12px; /* Reducir el tamaño de las descripciones */
+        font-size: 12px;
     }
 
     .product-img {
-        max-height: 150px; /* Reducir el tamaño máximo de las imágenes */
+        max-height: 150px;
     }
 
     button,
     .like-button {
-        font-size: 12px; /* Reducir el tamaño de los botones */
+        font-size: 12px;
     }
 }
 
+/* Ajustes para pantallas muy pequeñas */
 @media (max-width: 480px) {
     /* Cabecera */
     .header h1 {
-        font-size: 18px; /* Hacer el título aún más pequeño */
+        font-size: 18px;
     }
 
     .header__logo img {
-        width: 35px; /* Reducir aún más el logo */
+        width: 35px;
         height: 35px;
     }
 
@@ -270,30 +265,30 @@ button,
     }
 
     .nav a {
-        font-size: 14px; /* Reducir el tamaño de la fuente del menú */
+        font-size: 14px;
     }
 
     /* Sección de productos */
     .product {
-        width: 100%; /* Los productos ocupan todo el ancho */
+        width: 100%;
         margin: 5px 0;
     }
 
     .product h3 {
-        font-size: 14px; /* Reducir el tamaño de los títulos de los productos */
+        font-size: 14px;
     }
 
     .product p {
-        font-size: 10px; /* Reducir el tamaño de las descripciones */
+        font-size: 10px;
     }
 
     .product-img {
-        max-height: 120px; /* Reducir aún más el tamaño máximo de las imágenes */
+        max-height: 120px;
     }
 
     button,
     .like-button {
-        font-size: 12px; /* Reducir el tamaño de los botones */
+        font-size: 12px;
     }
 }
 
