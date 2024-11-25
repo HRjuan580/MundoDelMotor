@@ -20,7 +20,9 @@ También tendrás un apartado donde podrás iniciar sesión
 Wireframe
 
 En los Wireframe hay 10 páginas donde hay diferentes páginas:
+
 1º La primera página contiene el logo de la empresa u página, un índice donde estarán las diferentes páginas de las motos que habrá, un botón de carrito y una barra desplegable donde estarán los enlaces para iniciar sesión, consultas y ayudas.
+
 2º Las ss páginas estarán distribuidas por antigüedad.
 
 La página estará diseñada en HTML y CSS
