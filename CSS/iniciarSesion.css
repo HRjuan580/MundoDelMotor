@@ -1,4 +1,4 @@
-/* Reset de márgenes y padding */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,18 +9,21 @@
 /* Cabecera */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Asegura que logo y menú se distribuyan bien */
     align-items: center;
     background-color: #333;
     padding: 15px 20px;
     color: white;
     height: 80px;
     width: 100%; /* Asegura que la cabecera ocupe todo el ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo y Título */
 .header__logo {
     display: flex;
     align-items: center;
+    margin-right: 20px; /* Separar el logo del menú */
 }
 
 .header__logo .logo {
@@ -38,21 +41,17 @@
 /* Menú de navegación */
 .nav {
     display: flex;
-    justify-content: center; /* Centra el menú en el espacio restante */
     list-style: none; /* Elimina las viñetas */
     padding: 0;
     margin: 0;
+    justify-content: center; /* Centra el menú en el espacio disponible */
+    align-items: center; /* Centra los elementos verticalmente */
     flex-grow: 1; /* Hace que el menú ocupe todo el espacio disponible */
-}
-
-.nav > ul {
-    display: flex;
-    padding: 0;
 }
 
 .nav li {
     position: relative;
-    margin: 0 20px;
+    margin: 0 20px; /* Espaciado entre los elementos del menú */
 }
 
 .nav a {
@@ -93,6 +92,11 @@
     font-size: 16px;
     display: block;
     padding: 5px;
+    color: white;
+}
+
+.submenu a:hover {
+    background-color: #ff6f61;
 }
 
 /* Estilo para el formulario de login */
@@ -187,12 +191,27 @@ button:hover {
         margin: 10px 0;
     }
 
-    .login-container {
-        height: auto;
+    .submenu {
+        display: none; /* Ocultamos el submenú en pantallas pequeñas */
+        position: static;
+        background-color: #444;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
     }
 
-    .login-box {
-        width: 90%;
+    .nav li:hover .submenu {
+        display: block; /* Submenú solo visible al pasar el mouse */
+    }
+
+    /* Agregar un botón para mostrar el submenú */
+    .nav li a::after {
+        content: ' ▼'; /* Icono de desplegable */
+        font-size: 12px;
+    }
+
+    .submenu li {
+        margin: 5px 0;
     }
 }
 
@@ -202,4 +221,7 @@ body {
     color: #333;
     padding: 0 20px;
 }
+
+
+
 
