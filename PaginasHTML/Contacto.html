@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Contacto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Mundo de las Motos</title>
+
+  <!-- Vinculamos el archivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!-- Cabecera con navegación -->
 <header class="header">
   <section class="header__logo">
     <img src="../Imagenes/IconoPaginaWeb.jpeg" alt="Logo de la empresa" class="logo">
-    <h1>Mundo de las motos</h1>
+    <h1>Mundo de las Motos</h1>
   </section>
   <ul class="nav">
     <li><a href="">Inicio🏠</a>
       <ul>
-        <li><a href="../MundoDeLasMotos.html">Página 1 </a></li>
-        <li><a href="pagina2.html">Página 2 </a></li>
-        <li><a href="pagina3.html">Página 3 </a></li>
-        <li><a href="pagina4.html">Página 4 </a></li>
-        <li><a href="pagina5.html">Página 5 </a></li>
-        <li><a href="pagina6.html">Página 6 </a></li>
+        <li><a href="../MundoDeLasMotos.html">Página 1</a></li>
+        <li><a href="pagina2.html">Página 2</a></li>
+        <li><a href="pagina3.html">Página 3</a></li>
+        <li><a href="pagina4.html">Página 4</a></li>
+        <li><a href="pagina5.html">Página 5</a></li>
+        <li><a href="pagina6.html">Página 6</a></li>
       </ul>
     </li>
     <li><a href="PaginasHTML/iniciarsesion.html">Iniciar sesión👥</a></li>
@@ -28,5 +32,21 @@
     <li><a href="PaginasHTML/Contacto.html">Contacto 📁</a></li>
   </ul>
 </header>
+
+<!-- Sección de formulario de contacto -->
+<section class="contact-form">
+  <h2>¡Contáctanos! 🏍️</h2>
+  <p>¿Tienes alguna duda sobre nuestras motos o productos? ¡Estamos aquí para ayudarte!</p>
+  <form action="" method="POST">
+    <label for="email">Correo Electrónico</label>
+    <input type="email" id="email" name="email" required placeholder="Introduce tu correo electrónico">
+
+    <label for="message">Tu Mensaje</label>
+    <textarea id="message" name="message" rows="5" required placeholder="Escribe tu duda o consulta"></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
 </body>
 </html>
