@@ -1,32 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>sobreNosotros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - Mundo de las Motos</title>
+  <link rel="stylesheet" href="../CSS/sobreNosotros.css">
 </head>
 <body>
+
 <!-- Cabecera con navegación -->
 <header class="header">
   <section class="header__logo">
     <img src="../Imagenes/IconoPaginaWeb.jpeg" alt="Logo de la empresa" class="logo">
     <h1>Mundo de las motos</h1>
   </section>
-  <ul class="nav">
-    <li><a href="">Inicio🏠</a>
-      <ul>
-        <li><a href="../MundoDeLasMotos.html">Página 1 </a></li>
-        <li><a href="pagina2.html">Página 2 </a></li>
-        <li><a href="pagina3.html">Página 3 </a></li>
-        <li><a href="pagina4.html">Página 4 </a></li>
-        <li><a href="pagina5.html">Página 5 </a></li>
-        <li><a href="pagina6.html">Página 6 </a></li>
-      </ul>
-    </li>
-    <li><a href="PaginasHTML/iniciarsesion.html">Iniciar sesión👥</a></li>
-    <li><a href="PaginasHTML/carrito.html">Carrito 🛒</a></li>
-    <li><a href="PaginasHTML/sobreNosotros.html">Sobre nosotros🕵️‍♀️</a></li>
-    <li><a href="PaginasHTML/Contacto.html">Contacto 📁</a></li>
-  </ul>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="#">Inicio🏠</a>
+        <ul class="submenu">
+          <li><a href="../MundoDeLasMotos.html">Página 1</a></li>
+          <li><a href="pagina2.html">Página 2</a></li>
+          <li><a href="pagina3.html">Página 3</a></li>
+          <li><a href="pagina4.html">Página 4</a></li>
+          <li><a href="pagina5.html">Página 5</a></li>
+          <li><a href="pagina6.html">Página 6</a></li>
+        </ul>
+      </li>
+      <li><a href="PaginasHTML/iniciarsesion.html">Iniciar sesión👥</a></li>
+      <li><a href="PaginasHTML/carrito.html">Carrito 🛒</a></li>
+      <li><a href="PaginasHTML/sobreNosotros.html">Sobre nosotros🕵️‍♀️</a></li>
+      <li><a href="PaginasHTML/Contacto.html">Contacto 📁</a></li>
+    </ul>
+  </nav>
 </header>
+
+<!-- Sección Empresa -->
+<section id="empresa">
+  <header>
+    <h1>Bienvenido a Mundo de las Motos</h1>
+  </header>
+  <article>
+    <p>
+      Somos una empresa dedicada a ofrecerte las mejores motos para comprar o alquilar,
+      con opciones que se adaptan a todas tus necesidades.
+    </p>
+  </article>
+  <section>
+    <header>
+      <h2>Compra de Motos</h2>
+    </header>
+    <p>
+      Explora nuestra amplia selección de motos de alta calidad, perfectas para todos los estilos de conducción.
+    </p>
+    <a href="#comprar" class="btn">Ver Motos</a>
+  </section>
+  <section>
+    <header>
+      <h2>Alquiler de Motos</h2>
+    </header>
+    <p>
+      ¿Necesitas una moto por unos días? Descubre nuestras opciones flexibles de alquiler.
+    </p>
+    <a href="#alquilar" class="btn">Ver Opciones</a>
+  </section>
+</section>
+
 </body>
 </html>
