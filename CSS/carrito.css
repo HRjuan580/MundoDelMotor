@@ -1,0 +1,142 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+    height: 80px;
+    width: 100%;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header__logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menú de navegación */
+.nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centra el menú en el contenedor */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff6f61;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.nav-list li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 10px 0;
+}
+
+.submenu a {
+    font-size: 16px;
+    display: block;
+}
+
+/* Contenido del carrito */
+.cart-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cart-header h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Resumen del carrito */
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.total-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.total-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.checkout-btn, .continue-shopping-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-btn:hover, .continue-shopping-btn:hover {
+    background-color: #ff6f61;
+}

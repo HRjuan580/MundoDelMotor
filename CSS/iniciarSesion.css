@@ -3,91 +3,115 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;
 }
 
 /* Cabecera */
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
-    padding: 10px 0;
+    padding: 15px 20px;
+    color: white;
+    height: 80px;
+    width: 100%; /* Asegura que la cabecera ocupe todo el ancho */
 }
 
 .header__logo {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.header__logo img {
+.header__logo .logo {
     width: 50px;
+    height: auto;
     margin-right: 10px;
 }
 
-.header h1 {
-    font-size: 24px;
+.header__logo h1 {
+    font-size: 28px;
+    font-weight: bold;
     color: white;
 }
 
+/* Menú de navegación */
 .nav {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: center; /* Centra el menú en el espacio restante */
+    list-style: none; /* Elimina las viñetas */
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Hace que el menú ocupe todo el espacio disponible */
+}
+
+.nav > ul {
+    display: flex;
+    padding: 0;
 }
 
 .nav li {
+    position: relative;
     margin: 0 20px;
 }
 
 .nav a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    color: #ff6f61;
 }
 
-.nav ul {
+/* Submenú */
+.submenu {
     display: none;
     position: absolute;
-    background-color: #333;
-    list-style: none;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 150px;
 }
 
-.nav li:hover > ul {
+.nav li:hover .submenu {
     display: block;
 }
 
-.nav ul li {
-    padding: 10px;
+.submenu li {
+    margin: 10px 0;
 }
 
-.nav ul li a {
-    color: white;
+.submenu a {
+    font-size: 16px;
+    display: block;
+    padding: 5px;
 }
 
-/* Contenedor de login */
+/* Estilo para el formulario de login */
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
 .login-box {
-    background: rgba(0, 0, 0, 0.7);
+    background: #fff;
     padding: 30px;
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 400px;
-    color: white;
+    max-width: 100%;
 }
 
 .login-header .logo {
@@ -98,30 +122,30 @@ body {
 .login-header h2 {
     font-size: 22px;
     margin-bottom: 20px;
+    color: #333;
 }
 
-.input-group {
-    margin-bottom: 20px;
-}
-
-.input-group label {
+label {
     font-size: 14px;
     margin-bottom: 5px;
     display: block;
+    text-align: left;
+    color: #333;
 }
 
-.input-group input {
+input {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #ddd;
     margin-top: 5px;
+    font-size: 16px;
 }
 
-.login-btn {
+button {
     width: 100%;
     padding: 10px;
-    background-color: #ff6600;
+    background-color: #ff6f61;
     border: none;
     color: white;
     font-size: 16px;
@@ -130,7 +154,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.login-btn:hover {
+button:hover {
     background-color: #e65c00;
 }
 
@@ -138,10 +162,44 @@ body {
     display: block;
     margin-top: 10px;
     font-size: 14px;
-    color: #ff6600;
+    color: #ff6f61;
     text-decoration: none;
 }
 
 .forgot-password:hover {
     text-decoration: underline;
 }
+
+/* Estilo para la navegación responsiva */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+
+    .login-container {
+        height: auto;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+}
+
+/* Fondo y color general de la página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
+
