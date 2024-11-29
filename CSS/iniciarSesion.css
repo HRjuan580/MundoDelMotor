@@ -1,0 +1,147 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Cabecera */
+.header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: white;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav li {
+    margin: 0 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav ul li {
+    padding: 10px;
+}
+
+.nav ul li a {
+    color: white;
+}
+
+/* Contenedor de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    color: white;
+}
+
+.login-header .logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.login-header h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e65c00;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
