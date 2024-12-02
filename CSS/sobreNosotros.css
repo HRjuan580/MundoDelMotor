@@ -1,162 +1,149 @@
-/* Estilo general */
-body {
-    font-family: Arial, sans-serif;
+/* Reset de márgenes y padding */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* Cabecera */
 .header {
-    background-color: #333;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+    height: 80px;
+    width: 100%; /* Asegura que la cabecera ocupe todo el ancho */
+    position: relative;
 }
 
+/* Logo */
 .header__logo {
     display: flex;
     align-items: center;
 }
 
-.header__logo img.logo {
+.header__logo .logo {
     width: 50px;
-    height: 50px;
+    height: auto;
     margin-right: 10px;
 }
 
 .header__logo h1 {
-    font-size: 1.5rem;
-    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
 }
 
-/* Navegación */
+/* Menú de navegación */
 .nav {
+    display: flex;
+    justify-content: center;
     flex-grow: 1;
-    text-align: right;
+    position: relative;
 }
 
 .nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: flex-end;
-    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-list li {
     position: relative;
+    margin: 0 20px;
 }
 
 .nav-list a {
     text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .nav-list a:hover {
-    background-color: #575757;
-    border-radius: 5px;
+    color: #ff6f61;
+    background-color: #555;
 }
 
 /* Submenú */
 .submenu {
     display: none;
     position: absolute;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
     top: 100%;
     left: 0;
-    background-color: #444;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    border-radius: 5px;
-}
-
-.submenu li {
-    padding: 5px 15px;
-}
-
-.submenu a {
-    color: #fff;
-    font-size: 0.9rem;
+    z-index: 10;
+    min-width: 180px;
 }
 
 .nav-list li:hover .submenu {
     display: block;
 }
 
-/* Sección Empresa */
-#empresa {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
+.submenu li {
+    margin: 10px 0;
 }
 
-#empresa h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
+.submenu a {
+    font-size: 16px;
+    display: block;
 }
 
-#empresa p {
-    font-size: 1.2rem;
-    color: #555;
-    margin: 10px 0 30px;
+/* Estilo para los números al lado de las páginas */
+.nav-list li ul a span {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #ff6f61;
 }
 
-#empresa section {
-    margin-bottom: 30px;
-}
-
-#empresa h2 {
-    font-size: 1.8rem;
-    color: #444;
-    margin-bottom: 10px;
-}
-
-#empresa a.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-#empresa a.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive */
+/* Responsividad */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
         text-align: center;
+        height: auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
     }
 
     .nav-list {
         flex-direction: column;
-        gap: 10px;
+        width: 100%;
     }
 
-    #empresa h1 {
-        font-size: 2rem;
+    .nav-list li {
+        margin: 10px 0;
+        width: 100%;
     }
 
-    #empresa h2 {
-        font-size: 1.5rem;
+    .submenu {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
     }
 
-    #empresa p {
-        font-size: 1rem;
+    .nav-list li:hover .submenu {
+        display: block;
     }
 }
+
+/* Fondo y color general de la página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
+
+

@@ -1,3 +1,4 @@
+
 /* Reset de márgenes y padding */
 * {
     margin: 0;
@@ -15,9 +16,10 @@
     padding: 15px 20px;
     color: white;
     height: 80px;
-    width: 100%;
+    width: 100%; /* Asegura que la cabecera ocupe todo el ancho */
 }
 
+/* Logo */
 .header__logo {
     display: flex;
     align-items: center;
@@ -37,14 +39,13 @@
 
 /* Menú de navegación */
 .nav {
-    flex-grow: 1;
     display: flex;
-    justify-content: center; /* Centra el menú en el contenedor */
+    justify-content: center; /* Centra el menú en el espacio disponible */
+    flex-grow: 1;
 }
 
 .nav-list {
     display: flex;
-    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -52,7 +53,7 @@
 
 .nav-list li {
     position: relative;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-list a {
@@ -93,50 +94,38 @@
     display: block;
 }
 
-/* Contenido del carrito */
-.cart-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+/* Estilo para los números al lado de las páginas */
+.nav-list li ul a span {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #ff6f61; /* Color para los números */
 }
 
-.cart-header h2 {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
+/* Responsividad */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
 }
 
-/* Resumen del carrito */
-.cart-summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+/* Fondo y color general de la página */
+body {
     background-color: #f4f4f4;
-    border-radius: 8px;
+    color: #333;
+    padding: 0 20px;
 }
 
-.total-text {
-    font-size: 20px;
-    font-weight: bold;
-}
 
-.total-price {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff6f61;
-}
 
-.checkout-btn, .continue-shopping-btn {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
 
-.checkout-btn:hover, .continue-shopping-btn:hover {
-    background-color: #ff6f61;
-}
