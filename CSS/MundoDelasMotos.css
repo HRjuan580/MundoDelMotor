@@ -304,7 +304,10 @@ body {
     font-weight: bold;
     color: #ff6f61; /* Color para los números */
 }
+section{
 
+
+}
 /* Responsividad */
 @media (max-width: 768px) {
     .header {
