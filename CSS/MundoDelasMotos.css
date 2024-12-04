@@ -202,4 +202,651 @@ body {
 }
 
 
+/* CSS carrito.css */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+    height: 80px;
+    width: 100%; /* Asegura que la cabecera ocupe todo el ancho */
+}
+
+/* Logo */
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header__logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menú de navegación */
+.nav {
+    display: flex;
+    justify-content: center; /* Centra el menú en el espacio disponible */
+    flex-grow: 1;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    position: relative;
+    margin: 0 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff6f61;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.nav-list li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 10px 0;
+}
+
+.submenu a {
+    font-size: 16px;
+    display: block;
+}
+
+/* Estilo para los números al lado de las páginas */
+.nav-list li ul a span {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #ff6f61; /* Color para los números */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+/* Fondo y color general de la página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
+
+
+/*  CSS Contacto.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cabecera */
+.header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #f39c12;
+}
+
+/* Submenú */
+.nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav ul li a {
+    padding: 10px 20px;
+}
+
+/* Sección del formulario de contacto */
+.contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b;
+}
+
+/* CSS iniciarSesion.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera */
+.header {
+    display: flex;
+    justify-content: space-between; /* Asegura que logo y menú se distribuyan bien */
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+    height: 80px;
+    width: 100%; /* Asegura que la cabecera ocupe todo el ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo y Título */
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Separar el logo del menú */
+}
+
+.header__logo .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header__logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menú de navegación */
+.nav {
+    display: flex;
+    list-style: none; /* Elimina las viñetas */
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centra el menú en el espacio disponible */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-grow: 1; /* Hace que el menú ocupe todo el espacio disponible */
+}
+
+.nav li {
+    position: relative;
+    margin: 0 20px; /* Espaciado entre los elementos del menú */
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ff6f61;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 150px;
+}
+
+.nav li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 10px 0;
+}
+
+.submenu a {
+    font-size: 16px;
+    display: block;
+    padding: 5px;
+    color: white;
+}
+
+.submenu a:hover {
+    background-color: #ff6f61;
+}
+
+/* Estilo para el formulario de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    max-width: 100%;
+}
+
+.login-header .logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.login-header h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la navegación responsiva */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+
+    .submenu {
+        display: none; /* Ocultamos el submenú en pantallas pequeñas */
+        position: static;
+        background-color: #444;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .nav li:hover .submenu {
+        display: block; /* Submenú solo visible al pasar el mouse */
+    }
+
+    /* Agregar un botón para mostrar el submenú */
+    .nav li a::after {
+        content: ' ▼'; /* Icono de desplegable */
+        font-size: 12px;
+    }
+
+    .submenu li {
+        margin: 5px 0;
+    }
+}
+
+/* Fondo y color general de la página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* CSS sobreNosotros */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+    height: 80px;
+    width: 100%; /* Asegura que la cabecera ocupe todo el ancho */
+    position: relative;
+}
+
+/* Logo */
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header__logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menú de navegación */
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    position: relative;
+    margin: 0 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff6f61;
+    background-color: #555;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 180px;
+}
+
+.nav-list li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 10px 0;
+}
+
+.submenu a {
+    font-size: 16px;
+    display: block;
+}
+
+/* Estilo para los números al lado de las páginas */
+.nav-list li ul a span {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .submenu {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .nav-list li:hover .submenu {
+        display: block;
+    }
+}
+
+/* Fondo y color general de la página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
