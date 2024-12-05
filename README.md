@@ -1,4 +1,4 @@
-![IMG20241108155152](https://github.com/user-attachments/assets/1a781c8d-2b53-4526-ba70-1654774a1cd3)# Mundo Del Motor
+# Mundo Del Motor
 El proyecto va a tratar una página “Mundo De Las Motos” donde podrás ver desde las motos más antiguas hasta las más nuevas.
 
 Lo primero de todo, nada mas entrar a la pagina hay el titulo de la pagina(Mundo Del Motor) y tendrás un índice donde podrás elegir el tipo de moto que gustes.
