@@ -11,16 +11,6 @@ Cada moto tendrá un botón para poder comprarla.
 
 Al principio de la página tendrá a su disposición un botón que te permitirá alquilar la moto para (viajes,rutas) y podrás también alquilar esa dicha moto por los días que desees.
 
-En el botón de alquilar la moto se le enviará un informe al responsable y este te calculará el precio dependiendo de los días que quieras alquilar.
-
-En la última página tendrás todo tipo de información sobre la empresa (redes,correo,teléfono,etc) y un apartado donde hay que poner el correo electrónico y un marco donde pondrás las dudas y consultas que te surjan sobre ese el tema de las motos.
-
-También tendrás un apartado donde podrás iniciar sesión
-
-Wireframe
-
-En los Wireframe hay 10 páginas donde hay diferentes páginas:
-
  Las ss páginas estarán distribuidas por antigüedad.
 
 La página estará diseñada en HTML y CSS
@@ -52,3 +42,4 @@ Las ss fotos son Wireframe sobre el tipo de idea que queria que tubiera la pagin
 ![IMG20241108155152](https://github.com/user-attachments/assets/24a9f907-2699-4409-ac9f-73ac0506078e)
 
 
+En el css esta hecho con @media para que se pueda ver en dispotivos mobiles o tablet, donde tambien se encuentra los ajustes de cada pagina y el encabezado con su menu 
