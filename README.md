@@ -42,4 +42,7 @@ Las ss fotos son Wireframe sobre el tipo de idea que queria que tubiera la pagin
 ![IMG20241108155152](https://github.com/user-attachments/assets/24a9f907-2699-4409-ac9f-73ac0506078e)
 
 
-En el css esta hecho con @media para que se pueda ver en dispotivos mobiles o tablet, donde tambien se encuentra los ajustes de cada pagina y el encabezado con su menu 
+En el css esta hecho con @media para que se pueda ver en dispotivos mobiles o tablet, donde tambien se encuentra los ajustes de cada pagina y el encabezado con su menu.
+
+La pagina esta hecha con la tipografia Arial. Y en el css he intentado explicar cada cosa por si me perdia para que se pueda buscar mas rapido.
+En el css se encuentra todas las pagina divididas con un /*__*/ para distinguir cada apartado mas facil.
