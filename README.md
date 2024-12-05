@@ -32,3 +32,5 @@ Errores que tenia y han sido arreglados
 Menu, la parte despegable salia en otra parte y ha sido corregido
 
 Las paginas cuando las puse en el menu despegable me dio error de localhost y ya esta bien
+
+Hay un encabezado donde se demosita el logo de la empresa y el nombre, a la izquierda del encabezado hay un menú despegable, en el botón de inicio se encuentra el menú despegable con 6 páginas que su contenido se trata desde la moto más nueva a la más antigua, después está el apartado de iniciar sesión donde se encuentra un formulario para iniciar sesión, después un botón de 
